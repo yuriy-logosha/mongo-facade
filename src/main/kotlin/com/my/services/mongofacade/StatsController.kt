@@ -11,4 +11,8 @@ class StatsController(var repository: StatsRepository) {
     fun findAll(): MutableList<Stat> =
             repository.findAll().asReversed()
 
+    @GetMapping("/last")
+    fun last(): Stat =
+            repository.findAll().asReversed()[0]
+
 }

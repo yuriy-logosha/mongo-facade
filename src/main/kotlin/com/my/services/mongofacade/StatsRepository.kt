@@ -1,5 +1,6 @@
 package com.my.services.mongofacade
 
-import com.my.services.mongofacade.data.Stat
+import org.springframework.data.mongodb.repository.MongoRepository
 
-interface StatsRepository: org.springframework.data.mongodb.repository.MongoRepository<Stat, String>
+
+interface StatsRepository: MongoRepository<Stat, String>

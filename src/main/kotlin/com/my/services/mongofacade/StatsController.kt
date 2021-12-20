@@ -1,5 +1,6 @@
 package com.my.services.mongofacade
 
+import com.my.services.mongofacade.data.Stat
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
